@@ -11,7 +11,10 @@ import cart from "./Assets/svgs/cart.svg"
 import telephone from "./Assets/svgs/phone.svg"
 
 function App() {
-  /**Ignore this parent div */
+  const navigate = () => {
+    window.open('https://paystack.shop/drinksonbevz');
+
+}
   return (
     <div className="brewery">
       <section className="brewery__section">
@@ -40,11 +43,11 @@ function App() {
         <div className="brewery__section__item">
           <div className="grid-section">
             <div className="grid-section__buttons">
-              <button className="grid-section__buttons__button">
+              <button style={{ cursor: "pointer"}} onClick={navigate} className="grid-section__buttons__button">
                 <img src={cart} alt="" />
                 <span>Shop Now</span>
               </button>
-              <button className="grid-section__buttons__button white">
+              <button style={{ cursor: "pointer"}} className="grid-section__buttons__button white">
                 <img src={telephone} alt="" />
                 <span>Contact Us</span>
               </button>

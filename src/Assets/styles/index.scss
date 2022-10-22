@@ -42,6 +42,7 @@
                 }
                 &__img>img{
                     width: 100%;
+                    height: 20em
                 }
                 &__buttons{
                     height: 90%;
@@ -89,7 +90,7 @@
             }
         }
         &__item:nth-child(2){
-            height: 150px;
+            height: 125px;
             position: relative;
             overflow: hidden;
             &>img{
@@ -180,7 +181,7 @@
 
 .faded__bottom{
     width: 100%;
-    height: 60%;
+    height: 50%;
     background: white;
     z-index: 1;
     position: absolute;
