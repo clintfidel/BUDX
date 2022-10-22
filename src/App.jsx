@@ -2,7 +2,7 @@ import brands from "./Assets/images/brands.jpg";
 import logo from "./Assets/svgs/logo.svg";
 import art from "./Assets/svgs/artboard.svg";
 import drinkResponsibly from "./Assets/svgs/drink__responsibly.svg";
-import abinbev from "./Assets/svgs/abi__nigeria.svg"
+// import abinbev from "./Assets/svgs/abi__nigeria.svg"
 import twitter from "./Assets/svgs/twitter.svg";
 import instagram from "./Assets/svgs/Instagram.svg"
 import facebook from "./Assets/svgs/facebook.svg";
@@ -29,7 +29,7 @@ function App() {
           </div>
           <div className="text-center">
             <span className="showcase__text second">
-              <span className="emphasize">COLD</span> in minutes ready to{" "}
+              <span className="emphasize">COLD,</span> in minutes & ready to{" "}
             </span>
           </div>
           <div className="text-center">
