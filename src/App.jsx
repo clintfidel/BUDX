@@ -52,17 +52,17 @@ function App() {
                 <span>Contact Us</span>
               </button>
             </div>
-            <div className="abinbev__desktop">
+            {/* <div className="abinbev__desktop">
               <img src={abinbev} alt="" />
-            </div>
+            </div> */}
           </div>
           <div className="grid-section">
             <div className="grid-section__img">
               <img src={art} alt="" />
             </div>
-            <div className="abinbev__mobile">
+            {/* <div className="abinbev__mobile">
               <img src={abinbev} alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="brewery__section__item">
