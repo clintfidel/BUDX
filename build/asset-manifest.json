@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.571463dd.css",
+    "main.js": "/static/js/main.94540df5.js",
+    "static/js/787.16c7bd56.chunk.js": "/static/js/787.16c7bd56.chunk.js",
+    "static/media/brands.jpg": "/static/media/brands.c419f89101097401041f.jpg",
+    "static/media/drink__responsibly.svg": "/static/media/drink__responsibly.3213993dba8c989ac87343725949c090.svg",
+    "static/media/logo.svg": "/static/media/logo.3c8f5aeb2d567903b3791cd5b8251beb.svg",
+    "static/media/artboard.svg": "/static/media/artboard.3448ea93490558e3c54261e4950b7165.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.74da57a191c864a439f097f54f5263c5.svg",
+    "static/media/cart.svg": "/static/media/cart.16fae05462ace698d7c77de7a5afe320.svg",
+    "static/media/twitter.svg": "/static/media/twitter.85cda044b41d684b9de1596504dffb71.svg",
+    "static/media/phone.svg": "/static/media/phone.8165711f755240300b9dac20ef94a3b9.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.2e26e0a27e0f5e9a53a504c771e3d2c0.svg",
+    "main.571463dd.css.map": "/static/css/main.571463dd.css.map",
+    "main.94540df5.js.map": "/static/js/main.94540df5.js.map",
+    "787.16c7bd56.chunk.js.map": "/static/js/787.16c7bd56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.571463dd.css",
+    "static/js/main.94540df5.js"
+  ]
+}
