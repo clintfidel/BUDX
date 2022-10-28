@@ -12,7 +12,7 @@ import telephone from "./Assets/svgs/phone.svg"
 
 function App() {
   const navigate = () => {
-    window.open('https://paystack.shop/drinks-on-bevz');
+    window.open('https://paystack.shop/drinksonbevz');
 
 }
   return (
