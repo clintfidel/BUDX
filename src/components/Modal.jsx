@@ -5,24 +5,31 @@ import { routes } from "../routes"
 function Modal() {
     const [checkboxMarked, setCheckboxMarked] = useState(false);
     const [showForm, setShowForm] = useState(true);
+    const isUnderAge = localStorage.getItem("isUnderAge");
 
     const closeModal = () => {
         const modal = document.querySelector(".modal");
         modal.classList.add("hide");
+        localStorage.setItem("isUnderAge", false);
+    }
+
+    const handleUnderAge = () => {
+        setShowForm(false);
+        localStorage.setItem("isUnderAge", true);
     }
 
     return (
-        <div className="modal">
+        <div className={`modal ${isUnderAge === 'false' && 'hide'}`}>
             <div className="modal-content text-center">
                 <p className="modal-content__info">This website requires you to be 18 years or older to enter.</p>
                 {
-                    showForm
+                    showForm && isUnderAge === null
                 ?
                     <>
                         <h1 className="modal-content__question">Are you over 18 years?</h1>
                         <div className="modal-content__buttons">
                             <button className="btn" onClick={closeModal} disabled={!checkboxMarked}>YES, I am</button>
-                            <button className="btn" onClick={() => setShowForm(false)}>NO, I’m not</button>
+                            <button className="btn" onClick={handleUnderAge}>NO, I’m not</button>
                         </div>
                         <div className="modal-content__checkbox">
                             <input type="checkbox" onClick={() => setCheckboxMarked(!checkboxMarked)} />
