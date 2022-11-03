@@ -1,0 +1,118 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-color: rgb(58, 49, 49);
+    font-family: 'Overpass', sans-serif;
+    z-index: 4;
+    &.hide {
+        display: none;
+    }
+    &-content {
+        background-color: #ffffff;
+        width: 60%;
+        margin: 3rem auto;
+        border: 6px solid #EDEDED;
+        box-shadow: 0px 0px 150px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+        padding: 64px 0 92px;
+        @media screen and (max-width: 1024px) {
+            padding: 52px 0;
+            width: 70%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 85%;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 32px 0;
+            width: 98%;
+        }
+        &__info {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            margin: 0;
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        &__question {
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 101px;
+            margin: 0 0 16px;
+            @media screen and (max-width: 1024px) {
+                font-size: 36px;
+                line-height: 58px;
+            }
+        }
+        &__buttons {
+            margin-bottom: 36px;
+            .btn {
+                background: #D1A33C;
+                box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+                border-radius: 50px;
+                padding: 13px 40px;
+                border: none;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 24px;
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                    padding: 12px 22px;
+                }
+                &:first-of-type {
+                    margin-right: 28px;
+                    @media screen and (max-width: 1024px) {
+                        margin-right: 16px;
+                    }
+                }
+                &:nth-of-type(2) {
+                    color: #D1A33C;
+                    background-color: #FFFFFF;
+                }
+                &:not(:disabled) {
+                    cursor: pointer;
+                }
+                &:disabled {
+                    background-color: #ADADAD;
+                }
+            }
+        }
+        &__checkbox {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 16px;
+
+            input {
+                margin-right: 8px;
+                accent-color: #D1A33C;
+            }
+
+            a {
+                margin: 0 4px 0;
+                color: rgb(33, 78, 199);
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            p {
+                margin: 0;
+                text-align: start;
+            }
+        }
+        &__decline {
+            font-weight: 700;
+            font-size: 32px;
+            margin: 32px 16px 16px;
+            @media screen and (max-width: 1024px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
