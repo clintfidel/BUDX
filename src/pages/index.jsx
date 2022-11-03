@@ -82,6 +82,7 @@ function Home() {
                 <img src={facebook} alt="" />
                 <img src={whatsapp} alt="" />
               </div>
+              <p style={{ justifyContent: "center", fontSize: "14px", fontWeight: "bold"}} className="footer__caution">Copyright &copy;BEVZ 2022. All rights reserved. Alcohol is not for sale to persons under the Age of 18.</p>
               <div className="footer__caution">
                 <img src={drinkResponsibly} alt="" />
               </div>
