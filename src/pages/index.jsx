@@ -2,6 +2,8 @@ import brands from "../Assets/images/brands.jpg";
 import logo from "../Assets/svgs/logo.svg";
 import art from "../Assets/svgs/artboard.svg";
 import drinkResponsibly from "../Assets/svgs/drink__responsibly.svg";
+import { Link } from "react-router-dom";
+import { routes } from "../routes"
 // import abinbev from "./Assets/svgs/abi__nigeria.svg"
 import twitter from "../Assets/svgs/twitter.svg";
 import instagram from "../Assets/svgs/Instagram.svg"
@@ -83,6 +85,9 @@ function Home() {
                 <img src={whatsapp} alt="" />
               </div>
               <p style={{ justifyContent: "center", fontSize: "14px", fontWeight: "bold"}} className="footer__caution">Copyright &copy;BEVZ 2022. All rights reserved. Alcohol is not for sale to persons under the Age of 18.</p>
+              <Link style={{ justifyContent: "center", fontSize: "14px", fontWeight: "bold", color: "black", zIndex: "5"}} className="footer__caution"  to={routes.TermsAndConditions}>
+                Terms, Conditions & Privacy Policy 
+              </Link>
               <div className="footer__caution">
                 <img src={drinkResponsibly} alt="" />
               </div>
