@@ -72,16 +72,26 @@
     .featured-brands {
         &__section {
             display: flex;
-            padding: 88px 64px;
-
+            padding: 88px 64px 88px 12px;
+            align-items: center;
+            
             h2 {
-                transform: rotate(-90deg);
-                width: 15%;
+                color: rgba(0, 0, 0, 0.15);
+                font-size: 72px;
+                line-height: 72px;
+                margin: 0;
+                text-align: end;
+                display: inline-block;
             }
+        }
+        
+        &__title {
+            width: 15%;
+            transform: rotate(-90deg);
         }
 
         &__row {
-            width: 60%;
+            width: 70%;
             row-gap: 64px;
             display: flex;
             flex-direction: column;
@@ -91,6 +101,9 @@
             display: flex;
             
             &__text {
+                .btn {
+                    margin-top: 24px;
+                }
                 &.first {
                     margin-left: 40px;
                 }
@@ -150,4 +163,8 @@
         }
     }
 
+}
+
+.text-center {
+    text-align: center;
 }

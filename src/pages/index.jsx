@@ -13,15 +13,15 @@ import cart from "../Assets/svgs/cart.svg"
 import telephone from "../Assets/svgs/phone.svg"
 import Modal from "../components/Modal";
 import Button from "../components/Button";
-import herobannerImage from "../Assets/images/beer-group.png"
+import herobannerImage from "../Assets/images/hero-image.png"
 import trophyStout from "../Assets/images/brands/trophystout.png";
 import flyingFish from "../Assets/images/brands/flyingfish.png";
 import budweiser from "../Assets/images/brands/budweiser.png";
 import hero from "../Assets/images/brands/herolager.png";
 import castleLite from "../Assets/images/brands/castlelite.png";
 import trophy from "../Assets/images/brands/trophy.png";
-import flyingFishf from "../Assets/images/flyingfishes.png";
-import budweiserf from "../Assets/images/budweiser-f.png";
+import flyingFishf from "../Assets/images/flying-fish-merch.png";
+import budweiserf from "../Assets/images/budweiser-image.png";
 import footerLogo from "../Assets/images/logo.png"
 import notUnderAgeIcon from "../Assets/images/underageIcon.png"
 
@@ -72,27 +72,33 @@ function Home() {
         </div>
         <section className="featured-brands">
           <div className="featured-brands__section">
-            <h2>FEATURED BRANDS</h2>
+            <div className="featured-brands__title">
+              <h2>FEATURED BRANDS</h2>
+            </div>
             <div className="featured-brands__row">
               <div className="featured-brands__card">
                 <img src={flyingFishf} alt="flying fish" />
                 <div className="featured-brands__card__text first">
-                  <h3>Enjoy the new Flying Fish beer</h3>
+                  <h3>Order the new Flying Fish beer and Merch </h3>
                   <p>
-                    In every bottle of Flying Fish, you experience the perfect blend of premium beer and fruity flavor, which is 
-                    refreshing and filled with vibrance and pure excitement until the very last drop. Nothing Tastes Like Flying Fish.
+                    Flavoured beer, Tees, Shorts, Sports jackets, Socks, and more - Order the new Flying Fish beer and our range of 
+                    beautiful and trendy merchs.
                   </p>
-                  <Button btnClassName="btn__white">Learn more</Button>
+                  <p>
+                    Experience the perfect blend of premium beer and fruity flavor, which is refreshing and filled with vibrance and 
+                    pure excitement until the very last drop.
+                  </p>
+                  <Button btnClassName="btn__yellow">Learn more</Button>
                 </div>
               </div>
               <div className="featured-brands__card">
                 <div className="featured-brands__card__text second">
-                  <h3>Budweiser - Brewed smooth just for you</h3>
+                  <h3>Order your Budweiser now and get a World Cup prize</h3>
                   <p>
-                    With a smooth taste that doesn’t hold you back, Budweiser is brewed smooth for you, our Naija Kings. Offering the
+                    With a smooth taste that doesn’t hold you back, Budweiser is brewed smooth for you, our Naija Kings. Offering the 
                     smoothest feeling for the smoothest time.
                   </p>
-                  <Button btnClassName="btn__white">Learn more</Button>
+                  <Button btnClassName="btn__yellow">Learn more</Button>
                 </div>
                 <img src={budweiserf} alt="budweiser" />
               </div>
