@@ -8,9 +8,12 @@ function Modal() {
     const isUnderAge = localStorage.getItem("isUnderAge");
 
     const closeModal = () => {
-        const modal = document.querySelector(".modal");
-        modal.classList.add("hide");
         localStorage.setItem("isUnderAge", false);
+        window.location.reload();
+        setTimeout(() => {  
+            const modal = document.querySelector(".modal");
+            modal.classList.add("hide");
+        }, 2000);
     }
 
     const handleUnderAge = () => {
