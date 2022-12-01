@@ -42,8 +42,8 @@ function Home() {
             <h1>Cold drinks at the best price without leaving home</h1>
             <p>Get your favourite drinks, COLD, in minutes and ready to drink from the comfort of your home.</p>
             <div>
-              <Button btnClassName="btn__yellow">Shop now</Button>
-              <Button btnClassName="btn__white">Contact us</Button>
+              <Button style={{ cursor: "pointer"}} onClick={navigate} btnClassName="btn__yellow">Shop now</Button>
+              <Button style={{ cursor: "pointer"}} btnClassName="btn__white">Contact us</Button>
             </div>
             <div className="socials">
               <a href="https://twitter.com/drinksonbevz?s=11&t=xEQjoU9a0UFcKTy-COvo9g" target="_blank" rel="noreferrer" >
