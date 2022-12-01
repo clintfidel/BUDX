@@ -6,10 +6,15 @@
         position: relative;
 
         .logo__container {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            margin: 0 2%;
             &__drive {
                 width: 136px;
                 margin: 40px 55px;
-                
+                align-content: center;
                 &::before, &::after {
                     content: '';
                     background: rgba(0, 0, 0, 0.4);
@@ -17,6 +22,11 @@
                     height: 1px;
                     display: inline-block;
                 }
+            }
+            &__border {
+                border: 0.5px solid gray;
+                width: 40%;
+
             }
         }
 
@@ -62,12 +72,22 @@
     }
 
     .brands {
-        display: flex;
         background-color: white;
-        column-gap: 110px;
+        &__assets {
+        display: flex;
+        column-gap: 150px;
         overflow: hidden;
         padding: 20px 0;
+        transform: translateX(100%); /* Animation start out of the screen */
+
+        /* Add the animation */
+        animation: move 30s linear infinite 
+        }
     }
+
+    @keyframes move {
+        to { transform: translateX(-100%); }
+      }
 
     .featured-brands {
         &__section {

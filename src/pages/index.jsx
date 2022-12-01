@@ -34,7 +34,9 @@ function Home() {
       <div className="brewery">
         <section className="herobanner">
           <div className="logo__container">
+            <div className="logo__container__border" />
             <img className="logo__container__drive" src={logo} alt="logo" />
+            <div  className="logo__container__border" />
           </div>
           <div className="herobanner__text">
             <h1>Cold drinks at the best price without leaving home</h1>
@@ -57,6 +59,7 @@ function Home() {
           <img className="herobanner__image" src={herobannerImage} alt='premium beer' />
         </section>
         <div className="brands">
+          <div className="brands__assets">
           <img src={trophyStout} alt="trophy stout" />
           <img src={flyingFish} alt="flying fish" />
           <img src={budweiser} alt="budweiser" />
@@ -69,6 +72,8 @@ function Home() {
           <img src={hero} alt="hero lager" />
           <img src={castleLite} alt="castle lite" />
           <img src={trophy} alt="trophy" />
+          </div>
+          
         </div>
         <section className="featured-brands">
           <div className="featured-brands__section">
