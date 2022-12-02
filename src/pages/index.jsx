@@ -34,14 +34,16 @@ function Home() {
       <div className="brewery">
         <section className="herobanner">
           <div className="logo__container">
+            <div className="logo__container__border" />
             <img className="logo__container__drive" src={logo} alt="logo" />
+            <div  className="logo__container__border" />
           </div>
           <div className="herobanner__text">
             <h1>Cold drinks at the best price without leaving home</h1>
             <p>Get your favourite drinks, COLD, in minutes and ready to drink from the comfort of your home.</p>
             <div>
-              <Button btnClassName="btn__yellow">Shop now</Button>
-              <Button btnClassName="btn__white">Contact us</Button>
+              <Button style={{ cursor: "pointer"}} onClick={navigate} btnClassName="btn__yellow">Shop now</Button>
+              <Button style={{ cursor: "pointer"}} btnClassName="btn__white">Contact us</Button>
             </div>
             <div className="socials">
               <a href="https://twitter.com/drinksonbevz?s=11&t=xEQjoU9a0UFcKTy-COvo9g" target="_blank" rel="noreferrer" >
@@ -54,21 +56,26 @@ function Home() {
               <img src={whatsapp} alt="" />
             </div>
           </div>
-          <img className="herobanner__image" src={herobannerImage} alt='premium beer' />
+          <div className="herobanner__image__box">
+            <img className="herobanner__image" src={herobannerImage} alt='premium beer' />
+          </div>
         </section>
         <div className="brands">
-          <img src={trophyStout} alt="trophy stout" />
-          <img src={flyingFish} alt="flying fish" />
-          <img src={budweiser} alt="budweiser" />
-          <img src={hero} alt="hero lager" />
-          <img src={castleLite} alt="castle lite" />
-          <img src={trophy} alt="trophy" />
-          <img src={trophyStout} alt="trophy stout" />
-          <img src={flyingFish} alt="flying fish" />
-          <img src={budweiser} alt="budweiser" />
-          <img src={hero} alt="hero lager" />
-          <img src={castleLite} alt="castle lite" />
-          <img src={trophy} alt="trophy" />
+          <div className="brands__assets">
+            <img src={trophyStout} alt="trophy stout" />
+            <img src={flyingFish} alt="flying fish" />
+            <img src={budweiser} alt="budweiser" />
+            <img src={hero} alt="hero lager" />
+            <img src={castleLite} alt="castle lite" />
+            <img src={trophy} alt="trophy" />
+            <img src={trophyStout} alt="trophy stout" />
+            <img src={flyingFish} alt="flying fish" />
+            <img src={budweiser} alt="budweiser" />
+            <img src={hero} alt="hero lager" />
+            <img src={castleLite} alt="castle lite" />
+            <img src={trophy} alt="trophy" />
+          </div>
+          
         </div>
         <section className="featured-brands">
           <div className="featured-brands__section">
@@ -91,7 +98,7 @@ function Home() {
                   <Button btnClassName="btn__yellow">Learn more</Button>
                 </div>
               </div>
-              <div className="featured-brands__card">
+              <div className="featured-brands__card second">
                 <div className="featured-brands__card__text second">
                   <h3>Order your Budweiser now and get a World Cup prize</h3>
                   <p>
@@ -111,11 +118,13 @@ function Home() {
               <img src={footerLogo} alt="logo" />
               <span>Copyright ©BEVZ 2022. All rights reserved. Alcohol is not for sale to persons under the Age of 18.</span>
             </div>
-            <div className="footer__drink__responsibly">
-              <img src={notUnderAgeIcon} alt="logo" />
-              <span>Drink responsibly</span>
+            <div className="footer__text">
+              <div className="footer__drink__responsibly">
+                <img src={notUnderAgeIcon} alt="logo" />
+                <span>Drink responsibly</span>
+              </div>
+              <Link to={routes.TermsAndConditions} className="footer__terms">Terms, Conditions & Privacy Policy</Link>
             </div>
-            <Link to={routes.TermsAndConditions} className="footer__terms">Terms, Conditions & Privacy Policy</Link>
           </div>
         </footer>
         <Modal />
