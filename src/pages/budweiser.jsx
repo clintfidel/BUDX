@@ -42,57 +42,57 @@ function Home() {
         <section className="bud__hero">
           <img className="bud__hero__img" src={budweiserImg} alt="budweiser" />
         </section>
-        <section>
-        <div class="bud__hero__grid__container">
-          <div class="bud__hero__grid__item">
-            <img src={singlecan} alt="singlecan" />
-            <p>Budweiser 500ml (Can) x 1</p>
-            <Button onClick={buy1} style={{ cursor: "pointer"}} btnClassName="btn__black">
-              <Link style={{ textDecoration: 'none', color: 'white' }}>
-                Buy Now
-              </Link>
-            </Button>
+        <section className="bud__hero__grid__box">
+          <div className="bud__hero__grid__container">
+            <div class="bud__hero__grid__item">
+              <img src={singlecan} alt="singlecan" />
+              <p>Budweiser 500ml (Can) x 1</p>
+              <Button onClick={buy1} style={{ cursor: "pointer"}} btnClassName="btn__black">
+                <Link style={{ textDecoration: 'none', color: 'white' }}>
+                  Buy Now
+                </Link>
+              </Button>
+            </div>
+            <div class="bud__hero__grid__item">
+              <img src={budX3} alt="budX3" />
+              <p>Budweiser 500ml (Can) x 3</p>
+              <Button onClick={buy2} style={{ cursor: "pointer"}} btnClassName="btn__black">
+                <Link style={{ textDecoration: 'none', color: 'white' }}>
+                  Buy Now
+                </Link>
+              </Button>
+            </div>
+            <div class="bud__hero__grid__item">
+              <img src={budX4} alt="budX4" />
+              <p>Budweiser 500ml (Can) x 4</p>
+              <Button onClick={buy3} style={{ cursor: "pointer"}} btnClassName="btn__black">
+                <Link style={{ textDecoration: 'none', color: 'white' }}>
+                  Buy Now
+                </Link>
+              </Button>
+            </div>  
+            <div class="bud__hero__grid__item">
+              <img src={budX6} alt="budX4" />
+              <p>Budweiser 500ml (Can) x 6</p>
+              <Button onClick={buy4} style={{ cursor: "pointer"}} btnClassName="btn__black">
+                <Link style={{ textDecoration: 'none', color: 'white' }}>
+                  Buy Now
+                </Link>
+              </Button>
+            </div>
+            <div class="bud__hero__grid__item">
+              <img src={budX12} alt="bud12" />
+              <p>Budweiser 500ml (Can) x 12</p>
+              <Button onClick={buy5} style={{ cursor: "pointer"}} btnClassName="btn__black">
+                <Link style={{ textDecoration: 'none', color: 'white' }}>
+                  Buy Now
+                </Link>
+              </Button>
+            </div>
+            <div class="bud__hero__grid__item">
+              <img src={bud} alt="bud12" />
+            </div>
           </div>
-          <div class="bud__hero__grid__item">
-            <img src={budX3} alt="budX3" />
-            <p>Budweiser 500ml (Can) x 3</p>
-            <Button onClick={buy2} style={{ cursor: "pointer"}} btnClassName="btn__black">
-              <Link style={{ textDecoration: 'none', color: 'white' }}>
-                Buy Now
-              </Link>
-            </Button>
-          </div>
-          <div class="bud__hero__grid__item">
-            <img src={budX4} alt="budX4" />
-            <p>Budweiser 500ml (Can) x 4</p>
-            <Button onClick={buy3} style={{ cursor: "pointer"}} btnClassName="btn__black">
-              <Link style={{ textDecoration: 'none', color: 'white' }}>
-                Buy Now
-              </Link>
-            </Button>
-          </div>  
-          <div class="bud__hero__grid__item">
-            <img src={budX6} alt="budX4" />
-            <p>Budweiser 500ml (Can) x 6</p>
-            <Button onClick={buy4} style={{ cursor: "pointer"}} btnClassName="btn__black">
-              <Link style={{ textDecoration: 'none', color: 'white' }}>
-                Buy Now
-              </Link>
-            </Button>
-          </div>
-          <div class="bud__hero__grid__item">
-            <img src={budX12} alt="bud12" />
-            <p>Budweiser 500ml (Can) x 12</p>
-            <Button onClick={buy5} style={{ cursor: "pointer"}} btnClassName="btn__black">
-              <Link style={{ textDecoration: 'none', color: 'white' }}>
-                Buy Now
-              </Link>
-            </Button>
-          </div>
-          <div class="bud__hero__grid__item">
-            <img src={bud} alt="bud12" />
-          </div>
-        </div>
         </section>
         <footer>
           <div className="footer__row">
