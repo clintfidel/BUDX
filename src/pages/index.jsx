@@ -95,7 +95,11 @@ function Home() {
                     Experience the perfect blend of premium beer and fruity flavor, which is refreshing and filled with vibrance and 
                     pure excitement until the very last drop.
                   </p>
-                  <Button btnClassName="btn__yellow">Learn more</Button>
+                  <Button style={{ cursor: "pointer"}} btnClassName="btn__yellow">
+                    <Link style={{ textDecoration: 'none', color: 'black' }}>
+                      Order Now
+                    </Link>
+                  </Button>
                 </div>
               </div>
               <div className="featured-brands__card second">
@@ -105,7 +109,11 @@ function Home() {
                     With a smooth taste that doesn’t hold you back, Budweiser is brewed smooth for you, our Naija Kings. Offering the 
                     smoothest feeling for the smoothest time.
                   </p>
-                  <Button btnClassName="btn__yellow">Learn more</Button>
+                  <Button style={{ cursor: "pointer"}} btnClassName="btn__yellow">
+                    <Link style={{ textDecoration: 'none', color: 'black' }} to={routes.BudweiserPage}>
+                      Order Now
+                    </Link>
+                  </Button>
                 </div>
                 <img src={budweiserf} alt="budweiser" />
               </div>
