@@ -2,7 +2,7 @@ import logo from "../Assets/svgs/logo.svg";
 import { Link } from "react-router-dom";
 import { routes } from "../routes"
 import budweiserImg from '../Assets/svgs/budweiserHero.svg'
-import bud from '../Assets/images/budweiser-image.png'
+import bud from '../Assets/images/budweiser-image.webp'
 import singlecan from '../Assets/svgs/singlecan.svg'
 import budX3 from '../Assets/svgs/budX3.svg'
 import budX4 from '../Assets/svgs/budX4.svg'
