@@ -91,7 +91,7 @@ function Home() {
                     pure excitement until the very last drop.
                   </p>
                   <Button style={{ cursor: "pointer"}} btnClassName="btn__yellow">
-                    <Link style={{ textDecoration: 'none', color: 'black' }}>
+                    <Link style={{ textDecoration: 'none', color: 'black' }} to={routes.FlyingFishPage}>
                       Order Now
                     </Link>
                   </Button>
