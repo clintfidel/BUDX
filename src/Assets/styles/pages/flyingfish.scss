@@ -1,0 +1,209 @@
+.flyingfish {
+    &__hero {
+        margin: 2% 16px 4%;
+        @media screen and (min-width: 550px) {
+            margin: 2% 24px 4%;
+        }
+        @media screen and (min-width: 768px) {
+            margin: 2% 64px 4%;
+        }
+
+        &__slider {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            
+            &__img-2, &__img-3, &__img-4 {
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
+
+            &__img-1 {
+                position: relative;
+                z-index: 5;
+            }
+
+            .active {
+                z-index: 10;
+            }
+
+            &.slider-1 {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+            &.slider-2 {
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        .circle {
+            width: 8px;
+            height: 8px;
+            background: #CDCDCD;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 8px;
+
+            &.active {
+                background: #E5B611;
+                width: 16px;
+                border-radius: 20px;
+            }
+        }
+
+    }
+
+    &__container {
+        margin: 2% 24px 4%;
+        @media screen and (min-width: 768px) {
+            margin: 2% 64px 4%;
+        }
+        &.mid-row {
+            display: flex;
+            column-gap: 24px;
+            @media screen and (max-width: 768px) {
+                flex-direction: column-reverse;
+                row-gap: 40px;
+            }
+
+            .featured-brands__card__text {
+                @media screen and (min-width: 768px) {
+                    width: 50%;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FF6C70;
+                    @media screen and (min-width: 768px) {
+                        font-size: 24px;
+                    }
+                }
+
+                h3 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin: 16px 0;
+                    @media screen and (min-width: 768px) {
+                        font-size: 48px;
+                        line-height: 64px;
+                        margin: 24px 0;
+                    }
+                }
+    
+                p {
+                    @media screen and (min-width: 768px) {
+                        font-size: 16px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+        }
+    }
+    &__form {
+        &__box {
+            @media screen and (min-width: 768px) {
+                width: 50%;
+            }
+        }
+
+        &__name {
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                column-gap: 24px;
+            }
+        }
+
+        background-color: #FFFFFF;
+        padding: 24px 24px 40px;
+        @media screen and (min-width: 768px) {
+            padding: 40px 48px;
+            height: 100%;
+        }
+
+        .input-box {
+            margin-bottom: 24px;
+            @media screen and (min-width: 768px) {
+                margin-bottom: 32px;
+            }
+
+            &.first, &.second {
+                @media screen and (min-width: 1200px) {
+                    width: 48%;
+                }
+            }
+
+            .form-label {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            .form-control {
+                width: 100%;
+                display: block;
+                margin-top: 8px;
+                padding: 16px 24px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+        }
+        .btn__yellow {
+            width: 100%;
+            margin-top: 16px;
+        }
+    }
+    &__merch {
+        margin: 56px 24px 64px;
+        @media screen and (min-width: 768px) {
+            margin: 104px 64px 80px;
+        }
+        &__row {
+            display: flex;
+            flex-wrap: nowrap;
+            column-gap: 24px;
+            @media screen and (max-width: 768px) {
+                overflow-x: scroll;
+            }
+
+            .col {
+                @media screen and (min-width: 768px) {
+                    width: 25%;
+                }    
+            }
+
+            .item__box {
+                background: #FF6C70;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 51px 58px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #000000;
+                    img {
+                        animation-name: scale;
+                        animation-duration: 1s;
+                    }
+
+                    @keyframes scale {
+                        from {transform: scale(1);}
+                        to {transform: scale(1.3);}
+                    }
+                }
+            }
+        }
+    }
+}

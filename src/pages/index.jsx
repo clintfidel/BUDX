@@ -1,7 +1,4 @@
-import brands from "../Assets/images/brands.jpg";
 import logo from "../Assets/svgs/logo.svg";
-import art from "../Assets/svgs/artboard.svg";
-import drinkResponsibly from "../Assets/svgs/drink__responsibly.svg";
 import { Link } from "react-router-dom";
 import { routes } from "../routes"
 // import abinbev from "./Assets/svgs/abi__nigeria.svg"
@@ -9,8 +6,6 @@ import twitter from "../Assets/svgs/twitter.svg";
 import instagram from "../Assets/svgs/Instagram.svg"
 import facebook from "../Assets/svgs/facebook.svg";
 import whatsapp from "../Assets/images/whatsapp.png";
-import cart from "../Assets/svgs/cart.svg"
-import telephone from "../Assets/svgs/phone.svg"
 import Modal from "../components/Modal";
 import Button from "../components/Button";
 import herobannerImage from "../Assets/images/hero-image.png"
@@ -21,7 +16,7 @@ import hero from "../Assets/images/brands/herolager.png";
 import castleLite from "../Assets/images/brands/castlelite.png";
 import trophy from "../Assets/images/brands/trophy.png";
 import flyingFishf from "../Assets/images/flying-fish-merch.png";
-import budweiserf from "../Assets/images/budweiser-image.png";
+import budweiserf from "../Assets/images/budweiser-image.webp";
 import footerLogo from "../Assets/images/logo.png"
 import notUnderAgeIcon from "../Assets/images/underageIcon.png"
 
@@ -95,7 +90,11 @@ function Home() {
                     Experience the perfect blend of premium beer and fruity flavor, which is refreshing and filled with vibrance and 
                     pure excitement until the very last drop.
                   </p>
-                  <Button btnClassName="btn__yellow">Learn more</Button>
+                  <Button style={{ cursor: "pointer"}} btnClassName="btn__yellow">
+                    <Link style={{ textDecoration: 'none', color: 'black' }} to={routes.FlyingFishPage}>
+                      Order Now
+                    </Link>
+                  </Button>
                 </div>
               </div>
               <div className="featured-brands__card second">
@@ -105,7 +104,11 @@ function Home() {
                     With a smooth taste that doesn’t hold you back, Budweiser is brewed smooth for you, our Naija Kings. Offering the 
                     smoothest feeling for the smoothest time.
                   </p>
-                  <Button btnClassName="btn__yellow">Learn more</Button>
+                  <Button style={{ cursor: "pointer"}} btnClassName="btn__yellow">
+                    <Link style={{ textDecoration: 'none', color: 'black' }} to={routes.BudweiserPage}>
+                      Order Now
+                    </Link>
+                  </Button>
                 </div>
                 <img src={budweiserf} alt="budweiser" />
               </div>
